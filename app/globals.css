@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* Cursed Energy Theme */
+  --cursed-black: #050505;
+  --cursed-purple: #6a0dad;
+  --cursed-purple-dark: #3b0066;
+  --cursed-red: #8b0000;
+  --cursed-red-bright: #ff0033;
+  --cursed-gray: #1a1a1a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-cursed-black: var(--cursed-black);
+  --color-cursed-purple: var(--cursed-purple);
+  --color-cursed-purple-dark: var(--cursed-purple-dark);
+  --color-cursed-red: var(--cursed-red);
+  --color-cursed-red-bright: var(--cursed-red-bright);
+  --color-cursed-gray: var(--cursed-gray);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: var(--background);
+  background-image: url('/codes-bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Utilities for visual effects */
+.text-glow {
+  text-shadow: 0 0 10px var(--cursed-purple);
+}
+
+.text-glow-red {
+  text-shadow: 0 0 10px var(--cursed-red-bright);
+}
+
+.border-glow {
+  box-shadow: 0 0 10px var(--cursed-purple-dark);
 }
