@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { EnvelopeIcon } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {
     title: 'Contact Us - Jujutsu Zero Fan Site',
@@ -13,12 +12,12 @@ export default function Contact() {
     return (
         <div className="bg-cursed-black py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl text-center">
-                    <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contact Us</h1>
-                    <p className="mt-2 text-lg leading-8 text-gray-400">
-                        Have questions, suggestions, or found a bug? We'd love to hear from you.
-                    </p>
-                </div>
+	                <div className="mx-auto max-w-2xl text-center">
+	                    <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contact Us</h1>
+	                    <p className="mt-2 text-lg leading-8 text-gray-400">
+	                        Have questions, suggestions, or found a bug? We’d love to hear from you.
+	                    </p>
+	                </div>
                 <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200/10 lg:mx-0 lg:flex lg:max-w-none bg-gray-900/50">
                     <div className="p-8 sm:p-10 lg:flex-auto">
                         <h3 className="text-2xl font-bold tracking-tight text-white">Get in touch</h3>

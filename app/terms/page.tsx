@@ -18,13 +18,13 @@ export default function TermsOfService() {
                     <div className="text-base leading-7 text-gray-400 space-y-6">
                         <p>Last Updated: {new Date().toLocaleDateString()}</p>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-white mb-3">1. Acceptance of Terms</h2>
-                            <p>
-                                By accessing and using JujutsuZero.app ("the Site"), you agree to comply with and be bound by these Terms of Service.
-                                If you do not agree to these terms, please do not use our website.
-                            </p>
-                        </section>
+	                        <section>
+	                            <h2 className="text-xl font-semibold text-white mb-3">1. Acceptance of Terms</h2>
+	                            <p>
+	                                By accessing and using JujutsuZero.app (“the Site”), you agree to comply with and be bound by these Terms of Service.
+	                                If you do not agree to these terms, please do not use our website.
+	                            </p>
+	                        </section>
 
                         <section>
                             <h2 className="text-xl font-semibold text-white mb-3">2. Disclaimer</h2>
@@ -42,12 +42,12 @@ export default function TermsOfService() {
                             </p>
                         </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-white mb-3">4. User Conduct</h2>
-                            <p>
-                                You agree not to use the site for any unlawful purpose. You must not attempt to disrupt the site's operation or scrape content without permission.
-                            </p>
-                        </section>
+	                        <section>
+	                            <h2 className="text-xl font-semibold text-white mb-3">4. User Conduct</h2>
+	                            <p>
+	                                You agree not to use the site for any unlawful purpose. You must not attempt to disrupt the site’s operation or scrape content without permission.
+	                            </p>
+	                        </section>
 
                         <section>
                             <h2 className="text-xl font-semibold text-white mb-3">5. Limitation of Liability</h2>

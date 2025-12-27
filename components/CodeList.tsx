@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type Code = {
     code: string;
@@ -89,17 +90,20 @@ export default function CodeList() {
                             <div>
                                 <h3 className="text-2xl font-bold text-white mb-6 text-glow">How to Redeem Jujutsu Zero Codes</h3>
                                 <div className="space-y-4 text-gray-300">
-                                    <p className="text-sm text-gray-400 italic mb-4">
-                                        To redeem your codes in Jujutsu Zero, you'll need to play through the tutorial mission first. After this, you'll land in the lobby area, and the game will reload the main menu. Here's how to redeem your rewards once you've done that.
-                                    </p>
+	                                    <p className="text-sm text-gray-400 italic mb-4">
+	                                        To redeem your codes in Jujutsu Zero, you’ll need to play through the tutorial mission first. After this, you’ll land in the lobby area, and the game will reload the main menu. Here’s how to redeem your rewards once you’ve done that.
+	                                    </p>
                                     <div className="flex gap-4">
                                         <div className="flex-none w-8 h-8 rounded-full bg-cursed-purple flex items-center justify-center font-bold text-white">1</div>
                                         <p>Launch <span className="text-white font-semibold">Jujutsu Zero</span> in Roblox.</p>
                                     </div>
-                                    <div className="flex gap-4">
-                                        <div className="flex-none w-8 h-8 rounded-full bg-cursed-purple flex items-center justify-center font-bold text-white">2</div>
-                                        <p>On the main menu, tap the <span className="text-white font-semibold">'shop'</span> tab.</p>
-                                    </div>
+	                                    <div className="flex gap-4">
+	                                        <div className="flex-none w-8 h-8 rounded-full bg-cursed-purple flex items-center justify-center font-bold text-white">2</div>
+	                                        <p>
+	                                            On the main menu, tap the{" "}
+	                                            <span className="text-white font-semibold">shop</span> tab.
+	                                        </p>
+	                                    </div>
                                     <div className="flex gap-4">
                                         <div className="flex-none w-8 h-8 rounded-full bg-cursed-purple flex items-center justify-center font-bold text-white">3</div>
                                         <p>Input your code.</p>
@@ -113,16 +117,18 @@ export default function CodeList() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="relative">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-cursed-purple to-cursed-red rounded-xl blur opacity-30"></div>
-                                <img
-                                    src="/redeem-guide.png"
-                                    alt="How to Redeem Codes in Jujutsu Zero"
-                                    className="relative rounded-xl border border-gray-700 shadow-2xl w-full"
-                                />
-                            </div>
-                        </div>
-                    </div>
+	                            <div className="relative">
+	                                <div className="absolute -inset-1 bg-gradient-to-r from-cursed-purple to-cursed-red rounded-xl blur opacity-30"></div>
+	                                <Image
+	                                    src="/redeem-guide.png"
+	                                    alt="How to Redeem Codes in Jujutsu Zero"
+	                                    width={1024}
+	                                    height={574}
+	                                    className="relative rounded-xl border border-gray-700 shadow-2xl w-full h-auto"
+	                                />
+	                            </div>
+	                        </div>
+	                    </div>
                 </div>
             </div>
         </div>

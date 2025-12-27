@@ -18,13 +18,13 @@ export default function PrivacyPolicy() {
                     <div className="text-base leading-7 text-gray-400 space-y-6">
                         <p>Last Updated: {new Date().toLocaleDateString()}</p>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
-                            <p>
-                                Welcome to JujutsuZero.app ("we," "our," or "us"). We are committed to respecting your privacy.
-                                This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
-                            </p>
-                        </section>
+	                        <section>
+	                            <h2 className="text-xl font-semibold text-white mb-3">1. Introduction</h2>
+	                            <p>
+	                                Welcome to JujutsuZero.app (“we,” “our,” or “us”). We are committed to respecting your privacy.
+	                                This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
+	                            </p>
+	                        </section>
 
                         <section>
                             <h2 className="text-xl font-semibold text-white mb-3">2. Information Collection</h2>
@@ -55,19 +55,19 @@ export default function PrivacyPolicy() {
                             </p>
                         </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-white mb-3">5. Children's Privacy</h2>
-                            <p>
-                                Our website is a general audience site and is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.
-                            </p>
-                        </section>
+	                        <section>
+	                            <h2 className="text-xl font-semibold text-white mb-3">5. Children’s Privacy</h2>
+	                            <p>
+	                                Our website is a general audience site and is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.
+	                            </p>
+	                        </section>
 
-                        <section>
-                            <h2 className="text-xl font-semibold text-white mb-3">6. Updates</h2>
-                            <p>
-                                We may update this Privacy Policy from time to time. The updated version will be indicated by an updated "Revised" date.
-                            </p>
-                        </section>
+	                        <section>
+	                            <h2 className="text-xl font-semibold text-white mb-3">6. Updates</h2>
+	                            <p>
+	                                We may update this Privacy Policy from time to time. The updated version will be indicated by an updated “Revised” date.
+	                            </p>
+	                        </section>
                     </div>
                 </div>
             </div>
