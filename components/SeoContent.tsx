@@ -24,6 +24,13 @@ export default function SeoContent() {
           make codes fail. We keep the list organized (active vs expired) so you can copy a code,
           redeem it, and get back to grinding.
         </p>
+        <p className="mb-4">
+          Need more than codes? Browse our{" "}
+          <Link href="/wiki" className="text-white hover:underline">
+            Jujutsu Zero Wiki
+          </Link>{" "}
+          for clans, cursed techniques, tier list guidance, and party/co-op basics.
+        </p>
 
         <h3 className="text-lg font-semibold text-white mt-10 mb-3">What are Jujutsu Zero codes?</h3>
         <p className="mb-4">

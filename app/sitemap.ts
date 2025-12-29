@@ -11,6 +11,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
+            url: `${baseUrl}/wiki`,
+            lastModified: new Date(),
+            changeFrequency: 'daily',
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/tier-list`,
+            lastModified: new Date(),
+            changeFrequency: 'daily',
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/spin-calculator`,
+            lastModified: new Date(),
+            changeFrequency: 'daily',
+            priority: 0.8,
+        },
+        {
             url: `${baseUrl}/privacy`,
             lastModified: new Date(),
             changeFrequency: 'yearly',

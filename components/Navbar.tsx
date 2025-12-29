@@ -25,19 +25,31 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="#codes"
+                href="/#codes"
                 className="text-gray-300 hover:text-cursed-red-bright hover:text-glow-red px-3 py-2 rounded-md text-sm font-medium transition-all"
               >
                 Codes
               </Link>
               <Link
-                href="#guides"
+                href="/#guides"
                 className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all"
               >
                 Guides
               </Link>
               <Link
-                href="#wiki"
+                href="/tier-list"
+                className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all"
+              >
+                Tier List
+              </Link>
+              <Link
+                href="/spin-calculator"
+                className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all"
+              >
+                Calculator
+              </Link>
+              <Link
+                href="/wiki"
                 className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-all"
               >
                 Wiki

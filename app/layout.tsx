@@ -22,17 +22,25 @@ const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_ID ?? "uryp09hv7f";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jujutsuzero.app"),
-  title: "Jujutsu Zero Codes (Dec 2025) - Wiki, Guides & Tier List",
-  description: "Get the latest Jujutsu Zero codes for free spins, resets, and cash. Complete Wiki guide for Cursed Techniques, Clan Tier List, and game updates.",
-  keywords: ["Jujutsu Zero Codes", "Jujutsu Zero Roblox", "Jujutsu Zero Wiki", "Jujutsu Zero Tier List", "Jujutsu Zero Guides"],
-  alternates: {
-    canonical: "/",
+  title: {
+    default: "Jujutsu Zero",
+    template: "%s | Jujutsu Zero",
   },
+  description:
+    "Jujutsu Zero guides and wiki: active codes, clans, cursed techniques, tier lists, and progression tips.",
+  keywords: [
+    "Jujutsu Zero",
+    "Jujutsu Zero Codes",
+    "Jujutsu Zero Wiki",
+    "Jujutsu Zero Tier List",
+    "Jujutsu Zero Guides",
+  ],
   openGraph: {
-    title: "Jujutsu Zero Codes (Dec 2025) - Wiki, Guides & Tier List",
-    description: "Get the latest Jujutsu Zero codes for free spins, resets, and cash. Complete Wiki guide for Cursed Techniques, Clan Tier List, and game updates.",
+    title: "Jujutsu Zero",
+    description:
+      "Active codes, wiki guides, clans, cursed techniques, tier lists, and progression tips for Jujutsu Zero.",
     url: "/",
-    siteName: "Jujutsu Zero Codes",
+    siteName: "Jujutsu Zero",
     type: "website",
     images: [
       {
@@ -45,8 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jujutsu Zero Codes (Dec 2025) - Wiki, Guides & Tier List",
-    description: "Get the latest Jujutsu Zero codes for free spins, resets, and cash. Complete Wiki guide for Cursed Techniques, Clan Tier List, and game updates.",
+    title: "Jujutsu Zero",
+    description:
+      "Active codes and wiki guides for Jujutsu Zero: clans, cursed techniques, tier lists, and more.",
     images: ["/redeem-guide.png"],
   },
   icons: {

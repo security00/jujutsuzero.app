@@ -17,6 +17,12 @@ export default function Footer() {
                         <Link href="/" className="text-gray-400 hover:text-white transition-colors">
                             Home
                         </Link>
+                        <Link href="/wiki" className="text-gray-400 hover:text-white transition-colors">
+                            Wiki
+                        </Link>
+                        <Link href="/spin-calculator" className="text-gray-400 hover:text-white transition-colors">
+                            Spin Calculator
+                        </Link>
                         <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
                             Privacy Policy
                         </Link>

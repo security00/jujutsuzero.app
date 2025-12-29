@@ -1,6 +1,11 @@
 import Link from "next/link";
+import { getActiveCodes, getCodesStats } from "@/data/codes";
 
 export default function Hero() {
+    const activeCodes = getActiveCodes();
+    const stats = getCodesStats(activeCodes);
+    const totalRollsAndSpins = stats.clanRolls + stats.clanSpins;
+
     return (
         <div className="relative isolate px-6 pt-14 lg:px-8 overflow-hidden h-[90vh]">
             {/* Background Image Layer */}
@@ -45,7 +50,7 @@ export default function Hero() {
                                 <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                             </span>
                         </Link>
-                        <Link href="#guides" className="px-10 py-5 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-bold text-lg rounded-xl hover:bg-white/10 transition-all hover:border-white/30 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] tracking-wide">
+                        <Link href="/tier-list" className="px-10 py-5 bg-white/5 backdrop-blur-sm border border-white/10 text-white font-bold text-lg rounded-xl hover:bg-white/10 transition-all hover:border-white/30 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] tracking-wide">
                             VIEW TIER LIST
                         </Link>
                     </div>
@@ -54,16 +59,24 @@ export default function Hero() {
                 {/* Stats Row - Added more separation */}
                 <div className="mt-24 grid grid-cols-3 gap-12 border-t border-white/5 pt-12 max-w-2xl w-full mx-auto text-center">
                     <div className="group hover:-translate-y-1 transition-transform duration-300">
-                        <div className="text-4xl font-bold text-white text-glow group-hover:text-cursed-purple-bright transition-colors">100+</div>
+                        <div className="text-4xl font-bold text-white text-glow group-hover:text-cursed-purple-bright transition-colors">
+                            {activeCodes.length}
+                        </div>
                         <div className="text-sm text-gray-500 uppercase tracking-widest mt-2 font-medium">Active Codes</div>
                     </div>
                     <div className="group hover:-translate-y-1 transition-transform duration-300 delay-75">
-                        <div className="text-4xl font-bold text-white text-glow group-hover:text-cursed-purple-bright transition-colors">50K+</div>
-                        <div className="text-sm text-gray-500 uppercase tracking-widest mt-2 font-medium">Daily Users</div>
+                        <div className="text-4xl font-bold text-white text-glow group-hover:text-cursed-purple-bright transition-colors">
+                            {stats.lumens.toLocaleString("en-US")}
+                        </div>
+                        <div className="text-sm text-gray-500 uppercase tracking-widest mt-2 font-medium">Total Lumens</div>
                     </div>
                     <div className="group hover:-translate-y-1 transition-transform duration-300 delay-150">
-                        <div className="text-4xl font-bold text-white text-glow group-hover:text-cursed-purple-bright transition-colors">S+</div>
-                        <div className="text-sm text-gray-500 uppercase tracking-widest mt-2 font-medium">Tier Guides</div>
+                        <div className="text-4xl font-bold text-white text-glow group-hover:text-cursed-purple-bright transition-colors">
+                            {totalRollsAndSpins.toLocaleString("en-US")}
+                        </div>
+                        <div className="text-sm text-gray-500 uppercase tracking-widest mt-2 font-medium">
+                            Rolls / Spins
+                        </div>
                     </div>
                 </div>
             </div>
