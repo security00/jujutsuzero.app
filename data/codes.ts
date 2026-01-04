@@ -8,6 +8,7 @@ export type CodeRewards = {
   clanRerolls?: number;
   xpVows?: number;
   basicCharm?: number;
+  cursedFlesh?: number;
 };
 
 export type CodeEntry = {
@@ -18,50 +19,49 @@ export type CodeEntry = {
   releasedAt?: string; // YYYY-MM-DD (when the code first appeared)
 };
 
-export const CODES_LAST_UPDATED = "Dec 29, 2025";
+export const CODES_LAST_UPDATED = "Jan 4, 2026";
 
 export const CODES: CodeEntry[] = [
+  {
+    code: "PolarizedLight",
+    status: "active",
+    releasedAt: "2026-01-04",
+    rewards: { clanRolls: 20 },
+    note: "New",
+  },
+  {
+    code: "cursedfleshwowers",
+    status: "active",
+    releasedAt: "2026-01-04",
+    rewards: { cursedFlesh: 1, clanRolls: 30 },
+    note: "New",
+  },
+  {
+    code: "SHRINEDOMAIN1",
+    status: "active",
+    releasedAt: "2026-01-04",
+    rewards: { lumens: 3500, clanRolls: 75 },
+    note: "New",
+  },
+  {
+    code: "60KLIKES",
+    status: "active",
+    releasedAt: "2026-01-04",
+    rewards: { lumens: 3500, clanRolls: 30 },
+    note: "New",
+  },
+  {
+    code: "50KLIKES",
+    status: "active",
+    rewards: { lumens: 4500, clanRolls: 30 },
+    note: "Likes milestone",
+  },
   {
     code: "happyUnbanning",
     status: "active",
     releasedAt: "2025-12-28",
     rewards: { lumens: 1000, clanRolls: 25, festiveLumens: 500 },
     note: "Unbanning celebration",
-  },
-  {
-    code: "40KLIKES",
-    status: "active",
-    releasedAt: "2025-12-28",
-    rewards: { lumens: 2000, clanRolls: 40 },
-    note: "40K likes milestone",
-  },
-  {
-    code: "bugosfixedup",
-    status: "active",
-    releasedAt: "2025-12-28",
-    rewards: { lumens: 1500, clanRolls: 15 },
-    note: "Bug fixes compensation",
-  },
-  {
-    code: "DAMAGEBACKUPSORRYTHATWASMYFAULT",
-    status: "active",
-    releasedAt: "2025-12-28",
-    rewards: { lumens: 1000, clanRolls: 20 },
-    note: "Damage system fix apology",
-  },
-  {
-    code: "BETAUPDATE1",
-    status: "active",
-    releasedAt: "2025-12-27",
-    rewards: { lumens: 10000, festiveLumens: 3000, clanRolls: 125 },
-    note: "Beta Update 1 celebration",
-  },
-  {
-    code: "100Kmembers",
-    status: "active",
-    releasedAt: "2025-12-26",
-    rewards: { lumens: 10000, clanRolls: 50, festiveLumens: 1250 },
-    note: "100K Discord members milestone",
   },
   {
     code: "oopsMBgg",
@@ -85,33 +85,93 @@ export const CODES: CodeEntry[] = [
     note: "Christmas event",
   },
   {
-    code: "BETAout",
+    code: "80Kmembers",
     status: "active",
-    releasedAt: "2025-12-23",
-    rewards: { lumens: 3500, clanRolls: 200 },
-    note: "Open beta launch",
+    rewards: { lumens: 3500, clanRolls: 50 },
+    note: "Members milestone",
+  },
+  {
+    code: "20KLIKES",
+    status: "active",
+    rewards: { lumens: 3500, clanRolls: 35 },
+    note: "Likes milestone",
+  },
+  {
+    code: "CHARM",
+    status: "active",
+    rewards: { basicCharm: 1 },
+  },
+  {
+    code: "smallfixPATCH",
+    status: "active",
+    rewards: { lumens: 1500, xpVows: 3, clanRolls: 15 },
   },
 
   // Expired / archived
   {
-    code: "smallfixPATCH",
+    code: "BETAUPDATE1",
     status: "expired",
-    rewards: { lumens: 1500, xpVows: 3, clanRerolls: 15 },
+    rewards: {},
   },
   {
-    code: "CHARM",
+    code: "40KLIKES",
     status: "expired",
-    rewards: { basicCharm: 1 },
+    rewards: {},
+  },
+  {
+    code: "ha36SdGCa22klwa2900Sj",
+    status: "expired",
+    rewards: {},
+  },
+  {
+    code: "NEWYEAR!",
+    status: "expired",
+    rewards: {},
+  },
+  {
+    code: "certainlyACodeEver",
+    status: "expired",
+    rewards: {},
+  },
+  {
+    code: "buffDebuffBuffDebuff",
+    status: "expired",
+    rewards: {},
+  },
+  {
+    code: "100Kmembers",
+    status: "expired",
+    rewards: {},
+  },
+  {
+    code: "bugosfixedup",
+    status: "expired",
+    rewards: {},
+  },
+  {
+    code: "DAMAGEBACKUPSORRYTHATWASMYFAULT",
+    status: "expired",
+    rewards: {},
   },
   {
     code: "FREECLANSPINSYES",
     status: "expired",
-    rewards: { clanSpins: 1000 },
+    rewards: {},
   },
   {
-    code: "SHUTDOWN200",
+    code: "BETAout",
     status: "expired",
-    rewards: { lumens: 3500, clanRolls: 400 },
+    rewards: {},
+  },
+  {
+    code: "67kmemberscodeasabonus",
+    status: "expired",
+    rewards: {},
+  },
+  {
+    code: "shutdown200821",
+    status: "expired",
+    rewards: {},
   },
 ];
 
@@ -129,6 +189,7 @@ export function formatReward(rewards: CodeRewards): string {
   if (rewards.clanRerolls) parts.push(`${formatCount(rewards.clanRerolls)} Clan Rerolls`);
   if (rewards.xpVows) parts.push(`${formatCount(rewards.xpVows)} XP Vows`);
   if (rewards.basicCharm) parts.push(`${formatCount(rewards.basicCharm)} Basic Charm`);
+  if (rewards.cursedFlesh) parts.push(`${formatCount(rewards.cursedFlesh)} Cursed Flesh`);
 
   return parts.length ? parts.join(" + ") : "Reward varies";
 }
@@ -151,6 +212,7 @@ export function getCodesStats(codes: CodeEntry[]) {
       acc.clanRerolls += code.rewards.clanRerolls ?? 0;
       acc.xpVows += code.rewards.xpVows ?? 0;
       acc.basicCharm += code.rewards.basicCharm ?? 0;
+      acc.cursedFlesh += code.rewards.cursedFlesh ?? 0;
       return acc;
     },
     {
@@ -161,6 +223,7 @@ export function getCodesStats(codes: CodeEntry[]) {
       clanRerolls: 0,
       xpVows: 0,
       basicCharm: 0,
+      cursedFlesh: 0,
     },
   );
 }

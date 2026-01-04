@@ -171,7 +171,7 @@ export default function TierListPage() {
 
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Link
-                href="/#codes"
+                href="/jujutsu-zero-codes"
                 className="px-6 py-3 bg-cursed-purple text-white font-bold rounded-xl border border-cursed-purple-bright hover:scale-[1.02] transition-transform"
               >
                 Get Latest Codes
@@ -248,7 +248,7 @@ export default function TierListPage() {
               </li>
               <li>
                 If you’re rerolling, redeem current{" "}
-                <Link href="/#codes" className="text-white hover:underline">
+                <Link href="/jujutsu-zero-codes" className="text-white hover:underline">
                   Jujutsu Zero codes
                 </Link>{" "}
                 first so you’re not wasting resources. Then use the{" "}

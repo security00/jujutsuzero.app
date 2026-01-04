@@ -106,7 +106,7 @@ export default function SpinCalculator() {
           </p>
         </div>
         <div className="text-sm">
-          <Link href="/#codes" className="text-white hover:underline">
+          <Link href="/jujutsu-zero-codes" className="text-white hover:underline">
             Get more rolls via codes →
           </Link>
         </div>

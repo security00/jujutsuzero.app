@@ -72,7 +72,7 @@ export default function SpinCalculatorPage() {
 
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Link
-                href="/#codes"
+                href="/jujutsu-zero-codes"
                 className="px-6 py-3 bg-cursed-purple text-white font-bold rounded-xl border border-cursed-purple-bright hover:scale-[1.02] transition-transform"
               >
                 Get Latest Codes
@@ -92,4 +92,3 @@ export default function SpinCalculatorPage() {
     </>
   );
 }
-

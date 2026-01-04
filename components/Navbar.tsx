@@ -25,7 +25,7 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="/#codes"
+                href="/jujutsu-zero-codes"
                 className="text-gray-300 hover:text-cursed-red-bright hover:text-glow-red px-3 py-2 rounded-md text-sm font-medium transition-all"
               >
                 Codes

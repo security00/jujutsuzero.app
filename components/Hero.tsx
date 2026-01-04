@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getActiveCodes, getCodesStats } from "@/data/codes";
+import { CODES_LAST_UPDATED, getActiveCodes, getCodesStats } from "@/data/codes";
 
 export default function Hero() {
     const activeCodes = getActiveCodes();
@@ -14,15 +14,15 @@ export default function Hero() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8 h-full flex flex-col justify-center items-center relative z-10 pt-20">
                 <div className="max-w-5xl text-center space-y-12">
                     {/* Badge */}
-                    <div className="flex justify-center">
-                        <div className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-cursed-purple-bright bg-cursed-purple/10 border border-cursed-purple/20 backdrop-blur-md hover:bg-cursed-purple/20 transition-colors cursor-default select-none shadow-[0_0_15px_rgba(168,85,247,0.2)]">
-                            <span className="relative flex h-2 w-2 mr-2">
-                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cursed-purple-bright opacity-75"></span>
-                                <span className="relative inline-flex rounded-full h-2 w-2 bg-cursed-purple-bright"></span>
-                            </span>
-                            Latest Update: Christmas Event Live
-                        </div>
-                    </div>
+	                    <div className="flex justify-center">
+	                        <div className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium text-cursed-purple-bright bg-cursed-purple/10 border border-cursed-purple/20 backdrop-blur-md hover:bg-cursed-purple/20 transition-colors cursor-default select-none shadow-[0_0_15px_rgba(168,85,247,0.2)]">
+	                            <span className="relative flex h-2 w-2 mr-2">
+	                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cursed-purple-bright opacity-75"></span>
+	                                <span className="relative inline-flex rounded-full h-2 w-2 bg-cursed-purple-bright"></span>
+	                            </span>
+	                            Codes updated: {CODES_LAST_UPDATED}
+	                        </div>
+	                    </div>
 
                     {/* Main Title */}
                     <h1 className="text-5xl sm:text-7xl lg:text-9xl font-black tracking-tighter text-white drop-shadow-2xl leading-tight">

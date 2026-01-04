@@ -11,6 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
+            url: `${baseUrl}/jujutsu-zero-codes`,
+            lastModified: new Date(),
+            changeFrequency: 'daily',
+            priority: 1,
+        },
+        {
             url: `${baseUrl}/wiki`,
             lastModified: new Date(),
             changeFrequency: 'daily',

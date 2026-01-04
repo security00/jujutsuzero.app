@@ -258,7 +258,7 @@ export default function WikiPage() {
 
             <div className="mt-10 flex flex-wrap gap-4 justify-center">
               <Link
-                href="/#codes"
+                href="/jujutsu-zero-codes"
                 className="px-6 py-3 bg-cursed-purple text-white font-bold rounded-xl border border-cursed-purple-bright hover:scale-[1.02] transition-transform"
               >
                 View Latest Codes
@@ -330,7 +330,7 @@ export default function WikiPage() {
             </div>
             <div className="mt-6 rounded-xl border border-gray-700/60 bg-black/30 p-4 text-gray-400 text-sm">
               Fastest early boost: redeem current{" "}
-              <Link href="/#codes" className="text-white hover:underline">
+              <Link href="/jujutsu-zero-codes" className="text-white hover:underline">
                 codes
               </Link>{" "}
               before you start rerolling or grinding.
@@ -387,7 +387,7 @@ export default function WikiPage() {
             </div>
             <div className="mt-6 rounded-xl border border-gray-700/60 bg-black/30 p-4 text-gray-400 text-sm">
               Tip: clan rerolls often have a “pity” style system in-game. If you’re rerolling, redeem{" "}
-              <Link href="/#codes" className="text-white hover:underline">
+              <Link href="/jujutsu-zero-codes" className="text-white hover:underline">
                 codes
               </Link>{" "}
               first so you don’t waste rolls. You can also use our{" "}
@@ -501,7 +501,7 @@ export default function WikiPage() {
             </div>
             <div className="mt-6 rounded-xl border border-gray-700/60 bg-black/30 p-4 text-gray-400 text-sm">
               Want the fastest power spike? Combine a good clan/technique with free rewards from{" "}
-              <Link href="/#codes" className="text-white hover:underline">
+              <Link href="/jujutsu-zero-codes" className="text-white hover:underline">
                 Jujutsu Zero codes
               </Link>
               .
@@ -538,7 +538,7 @@ export default function WikiPage() {
             <ul className="mt-4 list-disc pl-5 space-y-2 text-gray-400 text-sm">
               <li>
                 Redeem codes early (many are time-limited) — see the{" "}
-                <Link href="/#codes" className="text-white hover:underline">
+                <Link href="/jujutsu-zero-codes" className="text-white hover:underline">
                   codes list
                 </Link>
                 .
@@ -601,7 +601,7 @@ export default function WikiPage() {
 
           <div className="mt-12 text-center text-sm text-gray-500">
             Looking for active rewards? Jump back to{" "}
-            <Link href="/#codes" className="text-white hover:underline">
+            <Link href="/jujutsu-zero-codes" className="text-white hover:underline">
               Jujutsu Zero Codes
             </Link>
             .
